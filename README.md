@@ -22,22 +22,25 @@ yerine sebebi söyleyip durur.
 
 ## Kurulum
 
-Bir terminal oturumunun komut satırında:
-
-```
-/plugin install udf-onizleme --marketplace hasanimer/claude-udf-onizleme
-```
-
-Çıkan `Add marketplace?` sorusuna `y`, ardından kapsam seçimi (kullanıcı kapsamı için Enter).
-
-Kabuktan:
+Kabuktan, iki adım — önce marketplace eklenir, sonra eklenti `ad@marketplace` ile kurulur:
 
 ```bash
-claude plugin install udf-onizleme --marketplace hasanimer/claude-udf-onizleme
+claude plugin marketplace add hasanimer/claude-udf-onizleme
+claude plugin install udf-onizleme@hasanimer
+```
+
+Bir terminal oturumunun komut satırından aynı iki adım:
+
+```
+/plugin marketplace add hasanimer/claude-udf-onizleme
+/plugin install udf-onizleme@hasanimer
 ```
 
 Masaüstü uygulamasında `/plugin` çalışmaz: komut kutusunun yanındaki **+** → **Plugins** →
 **Add marketplace** (`hasanimer/claude-udf-onizleme`) → **Add plugin**.
+
+> `claude plugin install … --marketplace …` biçimi bu sürümde yoktur; `install` komutu
+> `--marketplace` seçeneğini tanımaz, marketplace adı `@` ile verilir.
 
 ## Gereksinim
 
