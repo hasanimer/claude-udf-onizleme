@@ -1,0 +1,7 @@
+{
+  "name": "udf-onizleme",
+  "version": "0.1.0",
+  "description": "UDF (UYAP doküman formatı) dosyalarını metin olarak okunabilir kılar: Read aracı .udf okuduğunda ham zip yerine düz metin döner, /udf komutu dosyayı transkriptin yanındaki panelde açar",
+  "author": { "name": "Hasan İmer Akın" },
+  "types": "./types/index.d.ts"
+}

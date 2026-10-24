@@ -1,0 +1,5 @@
+{
+  "name": "hasanimer",
+  "owner": { "name": "Hasan İmer Akın" },
+  "plugins": [{ "name": "udf-onizleme", "source": "./" }]
+}

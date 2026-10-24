@@ -1,0 +1,4 @@
+{
+  "description": "Read aracının .udf okumasını düz metne çevirir, /udf komutunu kaydeder ve açılan belgeyi kendi panelinde çizer",
+  "modules": ["./register.tsx"]
+}
