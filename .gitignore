@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+__MACOSX/
+*.log
+node_modules/
+
+# Gerçek UDF'ler müvekkil verisi taşır; depoya girmez.
+*.[uU][dD][fF]
+.claude/

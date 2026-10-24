@@ -1,15 +1,14 @@
-/** Panelde açık duran UDF belgesi; hiç açılmadıysa null. */
-export type UdfBelge = {
-  /** Dosyanın tam yolu. */
-  yol: string
-  /** Zip içindeki content.xml'den çıkarılan düz metin. */
-  metin: string
-  /** Metnin satır sayısı. */
-  satir: number
-} | null
-
 declare module 'claude-code' {
   interface PluginState {
-    'udf-onizleme': { belge: UdfBelge }
+    'udf-onizleme': {
+      /**
+       * Açık belgenin sürümü: her /udf bir artırır, panel yeniden çizilir.
+       * Belgenin metni ve yolu burada değil, eklentinin kendi belleğinde durur;
+       * oturum durumunu her eklenti okuyabilir.
+       */
+      surum: number
+      /** Panelde açık olan bölümün sırası (0'dan). */
+      bolum: number
+    }
   }
 }

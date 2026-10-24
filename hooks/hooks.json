@@ -1,4 +1,6 @@
 {
-  "description": "Read aracının .udf okumasını düz metne çevirir, /udf komutunu kaydeder ve açılan belgeyi kendi panelinde çizer",
-  "modules": ["./register.tsx"]
+  "description": "Read aracının .udf okumasını düz metne çevirir, Write/Edit/NotebookEdit'in .udf yollarına yazmasını reddeder, /udf komutunu kaydeder ve açılan belgeyi kendi panelinde çizer",
+  "modules": [
+    "./register.tsx"
+  ]
 }

@@ -1,5 +1,22 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "hasanimer",
-  "owner": { "name": "Hasan İmer Akın" },
-  "plugins": [{ "name": "udf-onizleme", "source": "./" }]
+  "description": "Hasan İmer Akın'ın Claude Code eklentileri: UYAP ve Türk hukuk pratiği için araçlar.",
+  "owner": {
+    "name": "Hasan İmer Akın",
+    "url": "https://github.com/hasanimer"
+  },
+  "plugins": [
+    {
+      "name": "udf-onizleme",
+      "source": "./",
+      "description": "UYAP UDF dosyalarını Claude Code'da okunur kılar: Read aracı .udf okuduğunda ham zip yerine düz metin döndürür, /udf komutu belgeyi transkriptin yanındaki panelde gösterir. Read'de izin kuralları, izin diyaloğu ve PreToolUse hook'ları atlanmaz; izin aynı dosyanın tek satırlık bir Read'iyle sorulur. /udf, Read izin kurallarının reddettiği yolu açmaz; onay gerektiren yolu yalnız komutu kendiniz yazdığınızda, diyalog açmadan açar. Belge bozulmasın diye Write, Edit ve NotebookEdit'in .udf dosyasına yazmasını reddeder; başka araç çağrılarına dokunmaz. Arşiv yerelde unzip ya da tar ile açılır; ağ erişimi yok, eklenti diske bir şey yazmaz.",
+      "author": {
+        "name": "Hasan İmer Akın",
+        "url": "https://github.com/hasanimer"
+      },
+      "homepage": "https://github.com/hasanimer/claude-udf-onizleme",
+      "category": "productivity"
+    }
+  ]
 }
