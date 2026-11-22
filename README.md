@@ -155,3 +155,5 @@ koruması, ayrıştırmanın doğrusal kalması, `/udf` yol çözümü ve paneli
 ## Lisans
 
 MIT — bkz. [LICENSE](LICENSE).
+
+Bu eklentiyi kullandığınız çalışmalarda [Claude UDF Önizleme](https://github.com/hasanimer/claude-udf-onizleme) bağlantısını paylaşarak atıf yapmanızı rica ederiz.
